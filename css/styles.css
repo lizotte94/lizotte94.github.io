@@ -1,0 +1,291 @@
+/* COMMUN */
+body {
+  font-family: "Roboto";
+}
+
+.title {
+  font-size: 3rem !important;
+  margin: 40px 0 !important;
+}
+
+header {
+  background-color: #1D2F44;
+  /* background-color: #3B3B3B; */
+  color: #FFF;
+}
+
+header .icons a {
+  color: #FFF;
+  font-size: 1.5rem;
+  margin: 0 7px;
+}
+
+header .icons a:hover {
+  opacity: 0.6;
+}
+
+header.icons a:visited {
+  color: #FFF;
+}
+
+header .nav-link {
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.bg-color-kuzu {
+  /* background-color: #3B3B3B; */
+  background-color: #1D2F44 ;
+  color: #fff;
+}
+
+/* INDEX */
+.index header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .index header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .index header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .index header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  .index header .icons a {
+    color: #FFF;
+    font-size: 1.5rem;
+    margin: 0 7px;
+  }
+
+  .index header .icons a:hover {
+    opacity: 0.6;
+  }
+
+  .index header .icons a:visited {
+    color: #FFF;
+  }
+
+  .notre-mission {
+    margin-top: 40px;
+  }
+  
+  .notre-mission h3 {
+    padding-top: 20px;
+    border-top: 7px solid black;
+    width: 50%;
+    margin: auto;
+  }
+
+  .nos-programmes {
+    margin-top: 40px;
+  }
+
+  .nos-programmes h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 7px solid black;
+    width: 50%;
+    margin: auto;
+  }
+
+  .nos-programmes .card {
+    width: 18rem;
+    margin: 10px;
+  }
+
+  .nos-programmes .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .nos-programmes .card-buttons a {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+  }
+
+  .nos-programmes .card-body a:first-of-type {
+    margin-top: 10px;
+  }
+
+  .nos-programmes .card img {
+    width: 100;
+    max-height: 180px;
+    object-fit: cover;
+  }
+
+  .nous-contacter {
+    margin-top: 40px;
+  }
+
+  .nous-contacter a {
+    color: #FFF;
+  }
+
+  .nous-contacter a:hover {
+    opacity: 0.6;
+  }
+
+  .nous-contacter a:visited {
+    color: #FFF;
+  }
+
+  .nous-contacter .logo {
+    padding: 20px 0;
+  }
+
+  .nous-contacter .map {
+    padding: 10px;
+  }
+
+  .nous-contacter .icons a {
+    color: #FFF;
+    font-size: 1.5rem;
+    margin: 0 5px;
+  }
+  
+  .nous-contacter .icons a:hover {
+    opacity: 0.6;
+  }
+  
+  .nous-contacter .icons a:visited {
+    color: #FFF;
+  }
+
+  .copyrights p {
+    padding-top: 40px;
+    font-size: 0.75rem;
+  }
+
+ /* HORAIRE */
+.horaire  {
+
+}
+
+.horaire-container {
+  width: 80%;
+  margin: auto;
+}
+
+.horaire .test {
+  background-image: url('../assets/background-felix-compe.webp');
+  background-size: cover;         /* Covers the entire container */
+  background-position: center;    /* Centers the image */
+  height: 100vh;                  /* Full viewport height */
+  color: white;                   /* Makes text white */
+}
+
+.instructeurs .col {
+  padding: 0;
+}
+
+.instructeurs .description-instructeur {
+  padding: 30px 40px;
+  text-align: justify;
+}
+
+.instructeurs .img-container {
+  width: 100%; 
+  height: 90vh; 
+  overflow: hidden;
+}
+
+.instructeurs .img-container img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+
+
+  /* Media Query for devices withi coarse pointers and no hover functionality */
+  
+  /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+  
+  @media (pointer: coarse) and (hover: none) {
+    .index header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+  
+    .index header video {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .instructeurs .description-instructeur h2 {
+      font-size: 1.5rem;
+    }
+
+    .instructeurs .description-instructeur p {
+      font-size: 0.9rem;
+    }
+
+    .nous-contacter .map {
+      width: 500px;
+      height: 300px;
+    }
+
+    .nous-contacter .map iframe {
+      width: inherit;
+      height: inherit;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .nous-contacter .map {
+      width: 400px;
+      height: 250px;
+      margin: auto;
+    }
+
+    .nous-contacter .map iframe {
+      width: inherit;
+      height: inherit;
+    }
+  }
+
+  @media (max-width: 576px) {
+    /* .nos-programmes .card {
+      width: 14rem;
+    } */
+
+    .nous-contacter .map {
+      width: 300px;
+      height: 200px;
+      margin: auto;
+    }
+
+    .nous-contacter .map iframe {
+      width: inherit;
+      height: inherit;
+    }
+  }

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kuzushi Fight Club - Jiu-jitsu brésilien - Saint-Jérôme, Laurentides</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="./css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body class="horaire">
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-xl navbar-dark">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">
+                  <img src="./assets/kuzu_full_logo.webp" alt="Logo Kuzushi Fight Club" width="248" height="60">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Découvrir le dojo
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./nos-programmes.html">Nos programmes</a></li>
+                        <li><a class="dropdown-item" href="./nos-instructeurs.html">Nos instructeurs</a></li>
+                        <li><a class="dropdown-item" href="./notre-mission.html">Notre mission</a></li>
+                      </ul>
+                  </li>
+                <li class="nav-item"><a class="nav-link active" href="./horaire.html">Horaire</a></li>
+                <li class="nav-item"><a class="nav-link" href="./abonnements.html">Tarifs / Inscription</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pourquoi-le-bjj.html">Pourquoi le JJB ?</a></li>
+                <li class="nav-item"><a class="nav-link" href="./faq.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contactez-nous.html">Contactez-nous</a></li>
+              </ul>
+              <div class="d-flex icons">
+                <a href="https://www.facebook.com/saint.jerome.bjj"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/saint_jerome_bjj/"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.youtube.com/@Kuzushi_fight_club"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+      </nav>
+      </div>
+    </header>
+    <div class="container-fluid row">
+      <h1 class="text-center title">Horaire</h1>
+      <p class="text-center">
+        Vous pouvez utiliser l'horaire ci-dessous pour réserver votre place dans l'un de nos cours. <br>
+        Vous pouvez aussi passer directement au dojo dans l'une des plages horaires ci-dessous et profiter d'un cours d'essai gratuit ! <br>
+      </p>
+    </div>
+    <div class="container-fluid row horaire-container">
+      <div id="horaire-spinner" class="text-center">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+      <div id="calendar_7e3aef45-b134-4472-a56b-8d5f203a3094"></div><script type="text/javascript">(function(win, doc, zenJSHost, src, module, partitionApiKey, widgetInstanceId) {
+        win.zenplanner = win.zenplanner || {};
+        win.zenplanner.directLoadArgs = win.zenplanner.directLoadArgs || [];
+        var tryCount = 0,
+            intervalId = null;
+        function afterLoad() {
+            if (win.zenplanner.directLoader !== undefined && window.zenplanner.directLoader !== null) {
+                clearInterval(intervalId);
+                for (var i = 0, l = win.zenplanner.directLoadArgs.length; l > i; i++) {
+                    if (win.zenplanner.directLoadArgs[i].widgetInstanceId === widgetInstanceId) {
+                        win.zenplanner.directLoader.loadWidget(zenJSHost, module, partitionApiKey, widgetInstanceId);
+                    }
+                }
+            } else if (tryCount++ > 200) {
+                console.log('Zen Planner widget : ' + module + ', failed to load.');
+                clearInterval(intervalId);
+            }
+        }
+        if (win.zenplanner.directLoader === undefined || win.zenplanner.directLoader === null) {
+            win.zenplanner.directLoadArgs.push({
+                module: module,
+                partitionApiKey: partitionApiKey,
+                widgetInstanceId: widgetInstanceId
+            });
+            var s = doc.createElement('script');
+            s.async = 1;
+            s.src = zenJSHost + '/' + src;
+            doc.head.appendChild(s);
+            intervalId = setInterval(afterLoad, 50);
+        } else {
+            win.zenplanner.directLoader.loadWidget(zenJSHost, module, partitionApiKey, widgetInstanceId);
+        }
+    })(
+        window,
+        document,
+        'https://studio.zenplanner.com',
+        'zenplanner/studio/target/zp-widget-direct.js',
+        'calendar',
+        '98a6d106-8057-451f-8fc2-90576d8b362d',
+        '7e3aef45-b134-4472-a56b-8d5f203a3094'
+    );
+      </script>
+    </div>
+    <div class="container-fluid nous-contacter">
+      <div class="row align-items-center bg-color-kuzu">
+        <div class="col text-center">
+          <img class="logo" src="./assets/kuzu-logo-trans.webp" alt="">
+          <address>
+            <a href="https://www.google.com/maps/place/424+Rue+Saint+Georges,+Saint-J%C3%A9r%C3%B4me,+QC+J7Z+5B1/@45.7793551,-74.0047511,17z/data=!3m1!4b1!4m5!3m4!1s0x4ccf2ca3bd2d67d1:0xf501aa38e0a803dc!8m2!3d45.7793551!4d-74.0025624" target="_blank" rel="noreferrer noopener" class="wixui-rich-text__text">424 rue St-Georges, Saint-Jérôme</a><br>
+            <a href="mailto:kuzushi.fc.bjj@gmail.com">kuzushi.fc.bjj@gmail.com</a><br />
+            <a href="tel:514-216-6887">514-216-6887</a>
+          </address>
+          <div class="text-center icons">
+            <a href="https://www.facebook.com/saint.jerome.bjj"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/saint_jerome_bjj/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@Kuzushi_fight_club"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.3651037147893!2d-74.00513732517882!3d45.779358812357664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccf2d3fb3a2f3c1%3A0x84d4ed48936563f4!2sKuzushi%20Jiu-Jitsu%20Br%C3%A9silien!5e1!3m2!1sen!2sca!4v1729631576108!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          </div>
+      </div>
+    </div>
+    <div class="container-fluid copyrights">
+      <div class="row text-center bg-color-kuzu">
+        <p>©2024 par Kuzushi Fight Club Jiu-jitsu brésilien</p>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+<script>
+  const targetNode = document.getElementById('calendar_7e3aef45-b134-4472-a56b-8d5f203a3094');
+
+  const observer = new MutationObserver((mutationsList) => {
+      for (const mutation of mutationsList) {
+          if (mutation.type === 'childList') {
+              mutation.addedNodes.forEach((node) => {
+                if (node.tagName === 'IFRAME') {
+                    node.addEventListener('load', () => {
+                      setTimeout(() => {
+                        document.getElementById('horaire-spinner').remove();
+                      }, 1000)
+                    });
+                }
+              });
+          }
+      }
+  });
+
+  // Configurez l'observateur pour écouter les ajouts d'enfants
+  observer.observe(targetNode, { childList: true, subtree: true });
+</script>
