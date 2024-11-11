@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
-  <body class="horaire">
+  <body class="page-notre-mission">
     <header>
       <div class="container">
         <nav class="navbar navbar-expand-xl navbar-dark">
@@ -25,7 +25,7 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
               <ul class="navbar-nav">
                   <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Découvrir le dojo
                       </a>
                       <ul class="dropdown-menu">
@@ -34,7 +34,7 @@
                         <li><a class="dropdown-item" href="./notre-mission.html">Notre mission</a></li>
                       </ul>
                   </li>
-                <li class="nav-item"><a class="nav-link active" href="./horaire.html">Horaire</a></li>
+                <li class="nav-item"><a class="nav-link" href="./horaire.html">Horaire</a></li>
                 <li class="nav-item"><a class="nav-link" href="./abonnements.html">Tarifs / Inscription</a></li>
                 <li class="nav-item"><a class="nav-link" href="./pourquoi-le-bjj.html">Pourquoi le JJB ?</a></li>
                 <li class="nav-item"><a class="nav-link" href="./faq.html">FAQ</a></li>
@@ -50,14 +50,66 @@
       </nav>
       </div>
     </header>
-    <div class="container-fluid row">
-      <h1 class="text-center title">Horaire</h1>
-      <p class="text-center">
-        Vous pouvez utiliser l'horaire ci-dessous pour réserver votre place dans l'un de nos cours. <br>
-        Vous pouvez aussi passer directement au dojo dans l'une des plages horaires ci-dessous et profiter d'un cours d'essai gratuit ! <br>
-      </p>
-    </div>
-    <div class="container-fluid row horaire-container">
+    <div class="container-fluid row align-items-center mx-auto">
+        <div class="col-xl-6">
+            <h1 class="text-center title">Notre mission</h1>
+            <div>
+                <p class="text-center">
+                  Situé au coeur de Saint-Jérôme dans les Laurentides, nous sommes une école d'arts martiaux entièrement dédiée au Jiu-jitsu brésilien.
+                </p>
+                <p class="text-center">
+                  Au Kuzushi Fight Club, nous nous engageons à vous offrir un environnement sécuritaire, respectueux et accueillant pour la pratique du jiu-jitsu brésilien.
+                  Que vous soyez un débutant sans expérience, un pratiquant d'arts martiaux traditionnels ou un athlète de sports de combat expérimenté, vous êtes tous les bienvenus sur nos tatamis.
+                  Nous avons des classes adaptées à votre niveau qui propulseront vos habiletés techniques en combat au niveau supérieur.
+                </p>
+                <p class="text-center">
+                  Venez vous entraîner avec des entraîneurs expérimentés pour développer votre plein potentiel ! Essayez le sport de combat à la croissance la plus rapide au monde, où vous profiterez d'un entraînement à la fois stimulant physiquement et mentalement, tout en apprenant l'un des arts martiaux les plus efficacement conçus.
+                </p>
+            </div>
+            <div class="d-flex justify-content-around m-5">
+                <a type="button" class="btn btn-lg btn-outline-dark" href="./horaire.html">Planifiez votre cours d'essai gratuit par ici !</a>
+            </div>
+        </div>
+        <div class="col-xl-6">
+            <div id="carouselExampleCaptions" class="carousel slide pt-xl-5">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/notre-mission/dojo.jpg" class="d-block w-100" alt="Photo du dojo">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Le dojo</h5>
+                      <p>Un grand espace pour les cours, comportant un espace gym, deux douches et un vestiaire.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/notre-mission/groupe-apres-cours.webp" class="d-block w-100" alt="Élèves après le cours" style="object-position: bottom;">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Des élèves après le cours</h5>
+                      <p>Bien souvent, les meilleures discussions se passent après les cours.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/notre-mission/mathias-et-mat-compe.webp" class="d-block w-100" alt="Coach Mat avec un élève en compétition">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Coach Mat avec un élève du cours pour ados</h5>
+                      <p>Les coachs sont toujours présents aux compétitions pour soutenir les élèves.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Précédent</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Suivant</span>
+                </button>
+              </div>
+        </div>
     </div>
     <div class="container-fluid nous-contacter">
       <div class="row align-items-center bg-color-kuzu">
