@@ -97,7 +97,7 @@ header .nav-link {
     margin-top: 40px;
   }
   
-  .index .notre-mission h3 {
+  .index .notre-mission h2 {
     padding-top: 20px;
     border-top: 7px solid black;
     width: 50%;
@@ -108,7 +108,7 @@ header .nav-link {
     margin-top: 40px;
   }
 
-  .index .nos-programmes h3 {
+  .index .nos-programmes h2 {
     padding-top: 20px;
     padding-bottom: 20px;
     border-top: 7px solid black;
@@ -215,8 +215,7 @@ header .nav-link {
 }
 
 .abonnements-container {
-  width: 80%;
-  margin: auto;
+  
 }
 
 /* NOTRE MISSION */
