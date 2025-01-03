@@ -39,6 +39,13 @@ header .nav-link {
 }
 
 /* INDEX */
+#toast-promo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1050;
+}
+
 .index header {
     position: relative;
     background-color: black;

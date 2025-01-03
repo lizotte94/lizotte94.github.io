@@ -79,7 +79,7 @@
                 <h5 class="card-title">Cours pour adultes</h5>
                 <h6 class="card-subtitle mb-2 text-body-secondary">16 ans et plus</h6>
                 <p class="card-text">
-                  Que ce soit pour l'auto-défense, la confiance en soi, la mise en forme, la gestion du stress ou de l'anxiété, toutes les raisons sont bonnes pour commencer le jiu jitsu brésilien.<br><br>
+                  Que ce soit pour l'auto-défense, la confiance en soi, la mise en forme, la gestion du stress ou de l'anxiété, toutes les raisons sont bonnes pour commencer le jiu-jitsu brésilien.<br><br>
                   Il s'agit d'un entraînement complet  qui vous transformera en une meilleure version de vous-même, autant physiquement que mentalement.</p>
               </div>
               <div class="card-buttons">
@@ -208,6 +208,32 @@
         <p>©2025 par Kuzushi Fight Club Jiu-jitsu brésilien</p>
       </div>
     </div>
+    <!-- TOASTER PROMO -->
+    <div id ="toast-promo" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="./assets/kuzu-logo-trans.webp" class="rounded me-2" alt="Logo Kuzushi Fight Club" width="30">
+        <strong class="me-auto">Kuzushi Fight Club</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        <b>Introduction au jiu-jitsu brésilien</b><br>
+        Envie de découvrir le jiu jitsu brésilien ? Inscris-toi à notre programme de 6 cours pour débutants et fais tes premiers pas dans cet art martial.
+        <div class="mt-2" style="display: flex;flex-direction: column;;">
+          <a role="button" class="btn btn-sm btn-warning" href="./introduction-au-jiu-jitsu-bresilien.html">Tous les détails ici ! &rarr;</a>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+      var toastEl = document.getElementById('toast-promo');
+      var toast = new bootstrap.Toast(toastEl, {
+        animation: true,
+        autohide: false,
+        delay: 5000
+      });
+      toast.show();
+    });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
