@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tarifs / Inscription - Kuzushi Fight Club - Jiu-jitsu brésilien - Saint-Jérôme, Laurentides</title>
-    <meta name="description" content="Consultez les tarifs et inscrivez-vous aux cours de jiu-jitsu brésilien au Kuzushi Fight Club à Saint-Jérôme. Découvrez nos programmes et rejoignez notre communauté de passionnés.">
-    <meta name="keywords" content="tarifs jiu-jitsu, inscription jiu-jitsu, Saint-Jérôme, Kuzushi Fight Club, jiu-jitsu brésilien Laurentides, cours de jiu-jitsu, abonnement jiu-jitsu, Saint-Jérôme jiu-jitsu">
+    <title>Réserver un cours d'essai gratuit - Kuzushi Fight Club - Jiu-jitsu brésilien - Saint-Jérôme, Laurentides</title>
+    <meta name="description" content="Réservez un cours d'essai gratuit de jiu-jitsu brésilien au Kuzushi Fight Club à Saint-Jérôme. Profitez d'une introduction à notre discipline avec des instructeurs expérimentés.">
+    <meta name="keywords" content="cours d'essai gratuit, jiu-jitsu brésilien, Kuzushi Fight Club, Saint-Jérôme, Laurentides, dojo, cours d'essai, réservations, Saint-Jérôme jjb">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href="./css/styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
-  <body class="page-abonnements">
+  <body class="page-cours-essai-gratuit">
     <header>
       <div class="container">
         <nav class="navbar navbar-expand-xl navbar-dark">
@@ -36,8 +36,8 @@
                         <li><a class="dropdown-item" href="./notre-mission.html">Notre mission</a></li>
                       </ul>
                   </li>
-                <li class="nav-item"><a class="nav-link" href="./horaire.html">Horaire</a></li>
-                <li class="nav-item"><a class="nav-link active" href="./abonnements.html">Tarifs / Inscription</a></li>
+                <li class="nav-item"><a class="nav-link active" href="./horaire.html">Horaire</a></li>
+                <li class="nav-item"><a class="nav-link" href="./abonnements.html">Tarifs / Inscription</a></li>
                 <li class="nav-item"><a class="nav-link" href="./pourquoi-le-jjb.html">Pourquoi le JJB ?</a></li>
                 <li class="nav-item"><a class="nav-link" href="./faq.html">FAQ</a></li>
                 <li class="nav-item"><a class="nav-link" href="./contactez-nous.html">Contactez-nous</a></li>
@@ -53,70 +53,30 @@
       </div>
     </header>
     <div class="container-fluid row">
-      <h1 class="text-center title">Tarifs / Inscription</h1>
+      <h1 class="text-center title">Réservez votre cours d'essai gratuit !</h1>
       <p class="text-center">
-        Vous pouvez consulter nos tarifs ci-dessous et choisir l'abonnement qui vous convient. <br>
-        N'hésitez pas à <a href="./nos-programmes.html">consulter la page des programmes</a> pour obtenir davantage d'informations sur nos différents cours, ou encore à <a href="./contactez-nous.html">nous contacter</a> pour toute question !        
-     </p>
-     <div id="abonnements-spinner" class="text-center">
-      <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
+        Réservez facilement votre place pour un cours d'essai gratuit via le formulaire ci-dessous. <br>
+        Vous pouvez aussi vous présenter directement au dojo dans l'une des plages horaires disponibles pour profiter d'un cours d'essai gratuit ! <br>
+        Pour toute question, n'hésitez pas à <a href="./contactez-nous.html">nous contacter</a> ou à <a href="./nos-programmes.html">consulter la page des programmes</a> pour plus d'informations sur nos cours.   
+      </p>
     </div>
-    </div>
-    <div class="container-fluid row abonnements-container">
-      <div id="membership_4fcfdaa9-a63d-4970-9c0a-58ed18cf55d6"></div><script>(function(win, doc, zenJSHost, src, module, partitionApiKey, widgetInstanceId) {
-        win.zenplanner = win.zenplanner || {};
-        win.zenplanner.directLoadArgs = win.zenplanner.directLoadArgs || [];
-        var tryCount = 0,
-            intervalId = null;
-        function afterLoad() {
-            if (win.zenplanner.directLoader !== undefined && window.zenplanner.directLoader !== null) {
-                clearInterval(intervalId);
-                for (var i = 0, l = win.zenplanner.directLoadArgs.length; l > i; i++) {
-                    if (win.zenplanner.directLoadArgs[i].widgetInstanceId === widgetInstanceId) {
-                        win.zenplanner.directLoader.loadWidget(zenJSHost, module, partitionApiKey, widgetInstanceId);
-                    }
-                }
-            } else if (tryCount++ > 200) {
-                console.log('Zen Planner widget : ' + module + ', failed to load.');
-                clearInterval(intervalId);
-            }
-        }
-        if (win.zenplanner.directLoader === undefined || win.zenplanner.directLoader === null) {
-            win.zenplanner.directLoadArgs.push({
-                module: module,
-                partitionApiKey: partitionApiKey,
-                widgetInstanceId: widgetInstanceId
-            });
-            var s = doc.createElement('script');
-            s.async = 1;
-            s.src = zenJSHost + '/' + src;
-            doc.head.appendChild(s);
-            intervalId = setInterval(afterLoad, 50);
-        } else {
-            win.zenplanner.directLoader.loadWidget(zenJSHost, module, partitionApiKey, widgetInstanceId);
-        }
-    })(
-        window,
-        document,
-        'https://studio.zenplanner.com',
-        'zenplanner/studio/target/zp-widget-direct.js',
-        'membership',
-        '98a6d106-8057-451f-8fc2-90576d8b362d',
-        '4fcfdaa9-a63d-4970-9c0a-58ed18cf55d6'
-    );
-    </script>
+    <div class="container-fluid row cours-essai-gratuit-container">
+      <iframe src="https://link.saintjeromebjj.com/widget/group/N3yx9vBdqHBnvBo38AdJ" allow="payment" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="N3yx9vBdqHBnvBo38AdJ_1788463488508"></iframe><br><script src="https://link.saintjeromebjj.com/js/form_embed.js" type="text/javascript"></script>
     </div>
     <div class="container-fluid nous-contacter">
       <div class="row align-items-center bg-color-kuzu">
         <div class="col text-center">
-          <img class="logo" src="./assets/kuzu-logo-trans.webp" alt="Logo Kuzushi Fight Club">
+          <img class="logo" src="./assets/kuzu-logo-trans.webp" alt="Logo Kusuzhi Fight Club">
           <address>
             <a href="https://www.google.com/maps/place/Kuzushi+Jiu-Jitsu+Br%C3%A9silien/@45.7949182,-73.9969857,17z/data=!3m1!4b1!4m6!3m5!1s0x4ccf2d3fb3a2f3c1:0x84d4ed48936563f4!8m2!3d45.7949182!4d-73.9944108!16s%2Fg%2F11q8j_y5ct?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noreferrer noopener" class="wixui-rich-text__text">1085 Rue Melançon, Saint-Jérôme, QC J7Z 7N6</a><br>
             <a href="mailto:kuzushi.fc.bjj@gmail.com">kuzushi.fc.bjj@gmail.com</a><br>
             <a href="tel:450-565-5686">450-565-5686</a>
           </address>
+          <div class="text-center icons">
+            <a href="https://www.facebook.com/saint.jerome.bjj"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/saint_jerome_bjj/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@Kuzushi_fight_club"><i class="bi bi-youtube"></i></a>
+          </div>
         </div>
         <div class="col">
           <div class="map">
@@ -132,7 +92,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script>
-      const targetNode = document.getElementById('membership_4fcfdaa9-a63d-4970-9c0a-58ed18cf55d6');
+      const targetNode = document.getElementById('calendar_7e3aef45-b134-4472-a56b-8d5f203a3094');
     
       const observer = new MutationObserver((mutationsList) => {
           for (const mutation of mutationsList) {
@@ -141,8 +101,8 @@
                     if (node.tagName === 'IFRAME') {
                         node.addEventListener('load', () => {
                           setTimeout(() => {
-                            document.getElementById('abonnements-spinner').remove();
-                          }, 500)
+                            document.getElementById('horaire-spinner').remove();
+                          }, 1000)
                         });
                     }
                   });
